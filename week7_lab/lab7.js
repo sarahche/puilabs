@@ -1,26 +1,26 @@
 function Panda(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a panda”;
-  this.image = “panda.png”;
+  this.image = "panda.png";
+  this.image_alt = "An image of a panda";
 }
 
 function Lion(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a lion”;
-  this.image = “lion.png”;
+  this.image_alt = "An image of a lion";
+  this.image = "lion.png";
 }
 
 function Zebra(name, age) {
   this.name = name;
   this.age = age;
-  this.image_alt = “An image of a zebra”;
-  this.image = “zebra.png”;
+  this.image_alt = "An image of a zebra";
+  this.image = "zebra.png";
 }
 
 let animals = [new Panda(), new Lion(), new Zebra()];
-let names = ["Bamboo", "Leo", "Zee"];
+let names = ["Bamboo", "Leo", "Zee", "Bea", "Alex"];
 
 function generateRandomIndex(maxIndex) {
 	return Math.floor(Math.random() * maxIndex);
@@ -28,7 +28,7 @@ function generateRandomIndex(maxIndex) {
 
 function generateRandomName() {
 	let randomIndex = generateRandomIndex(names.length);
-  	return names[randomIndex];
+  return names[randomIndex];
 }
 
 function generateRandomAge() {
@@ -56,7 +56,7 @@ function generateRandomAnimal() {
 function onLoad() {
   let animal = generateRandomAnimal();
   console.log(animal)
-  document.getElementById("animal-properties").textContent = animal.name + "  " + animal.age + "years old";
+  document.getElementById("animal-properties").textContent = animal.name + " is " + animal.age + " " + "years old";
   let imageTag = document.getElementById("animal-img");
   imageTag.setAttribute("src", animal.image);
   imageTag.setAttribute("alt", animal.image_alt);
