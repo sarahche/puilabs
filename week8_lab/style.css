@@ -1,0 +1,18 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: navy;
+}
+
+#animal-img {
+    border: 10px solid navy;
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: navy;
+    border: 1px solid teal;
+    padding: 10px;
+    color: white;
+    font-size: 0.8em;
+}
